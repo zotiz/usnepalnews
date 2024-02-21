@@ -64,12 +64,7 @@ const TrendingNews = () => {
           <div className="flex-1 h-[450px]">
             {trendingNews.map((item, index) => {
               return (
-                <div
-                  key={index}
-                  className={`flex gap-3 mb-${
-                    index !== trendingNews.length - 1 ? 4 : 0
-                  }`}
-                >
+                <div key={index} className={`flex gap-3 mb-4`}>
                   <Image src={item.imgUrl} alt="daf" width={150} height={150} />
                   <div className="text-black">
                     <TimeOclock textcolor={"text-gray-400"} />
