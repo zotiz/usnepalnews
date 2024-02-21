@@ -8,23 +8,35 @@ const Navbar = () => {
 
   const navlink = [
     {
-      title: "Home",
+      title: "गृहपृष्‍ठ",
       url: "/",
     },
     {
-      title: "Nepal",
+      title: "समाचार",
       url: "/",
     },
     {
-      title: "USA",
+      title: "विचार",
       url: "/",
     },
     {
-      title: "Tech",
+      title: "देश",
       url: "/",
     },
     {
-      title: "Sports",
+      title: "बिजनेस",
+      url: "/",
+    },
+    {
+      title: "अमेरिका",
+      url: "/",
+    },
+    {
+      title: "अन्तरवार्ता",
+      url: "/",
+    },
+    {
+      title: "साहित्य",
       url: "/",
     },
   ];
@@ -59,6 +71,7 @@ const Navbar = () => {
           <DarkAndLight/>
         </div>
       </div>
+    
     </div>
   );
 };

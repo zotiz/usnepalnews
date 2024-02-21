@@ -4,7 +4,7 @@ import Topbar from '@/components/Topbar'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-import "boxicons/css/boxicons.min.css";
+import 'boxicons/css/boxicons.min.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -19,7 +19,8 @@ export default function RootLayout({ children }) {
         <Topbar />
         <hr />
         <Navbar />
-        <div className="max-w-[1300px] m-auto px-4">{children}</div>
+        <hr />
+        <div className="max-w-[1300px] m-auto px-4 h-auto">{children}</div>
 
         <Footer />
       </body>

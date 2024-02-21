@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.custom-box-shadow {
+  box-shadow: rgba(0, 0, 0, 90) -100px -150px 100px -100px inset;
+}
+.custom-bg{
+
+background: linear-gradient(180deg,#ffffff00, #00000000, #00000076, #000000f1 );
+}

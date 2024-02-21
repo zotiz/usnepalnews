@@ -5,14 +5,16 @@ import { TypeAnimation } from "react-type-animation";
 const TypingAnimation = () => {
   return (
     <TypeAnimation
-       // 'Lorem ipsum dolor' -> ['Lorem', ' ipsum', ' dolor']
+      // 'Lorem ipsum dolor' -> ['Lorem', ' ipsum', ' dolor']
       sequence={[
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+        "८३२ जना नेपाली चिकित्सकको नतिजा रद्दविरुद्ध अमेरिकी अदालतमा मुद्दा",
         2000,
-        "One man with courage makes a majority.",2000,
-        "Budget issues force the Tour to be cancelled.",2000,
-        "The Top 10 Best Computer Speakers in the Market.",2000
-
+        "ललिता निवास क्षेत्र ७ दिनभित्र खाली गर्नू : काठमाडौं महानगरपालिका",
+        2000,
+        "एमाले केन्द्रीय कमिटी बैठक : सरकारविरुद्ध जनदबाबका कार्यक्रममा छलफल जारी",
+        2000,
+        "सरकारले श्रीलंकाको जेलमा रहेका तीन नेपालीलाई आममाफीका लागि अनुरोध गर्ने",
+        2000,
       ]}
       cursor={false}
       speed={65}
