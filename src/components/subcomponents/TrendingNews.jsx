@@ -3,6 +3,7 @@ import React from "react";
 import TimeOclock from "./TimeOclock";
 import Fallowus from "./Fallowus";
 import WeatherApplication from "./WeatherApplication";
+import Author from "./AuthorName";
 
 const TrendingNews = () => {
   const trendingNews = [
@@ -34,7 +35,7 @@ const TrendingNews = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-3">
       <div className="col-span-2 text-xl font-semibold text-red-600">
         <span className="border-b-2 pb-[9px] border-red-500 pr-2">
           ट्रेन्डिङ समाचार
@@ -54,11 +55,8 @@ const TrendingNews = () => {
                 साहित्य
               </p>
               <p>‘राष्ट्रियता अब भूगोलमा मात्र सिमित छैन’</p>
-              <div className="flex gap-4">
-                <div className="flex items-center gap-2">
-                  <i class="bx bx-user-circle text-xl"></i>
-                  <p className="text-[12px] tracking-wide"> Jyoti Mishra</p>
-                </div>
+              <div className="flex gap-4 text-gray-400">
+                <Author authorName="Jyoti Mishra" />
                 <TimeOclock />
               </div>
             </div>
@@ -70,7 +68,9 @@ const TrendingNews = () => {
                   <Image src={item.imgUrl} alt="daf" width={150} height={150} />
                   <div className="text-black">
                     <TimeOclock textcolor={"text-gray-400"} />
-                    <p className="text-black text-[14px] font-normal">{item.title}</p>
+                    <p className="text-black text-[14px] font-normal">
+                      {item.title}
+                    </p>
                   </div>
                 </div>
               );
@@ -84,8 +84,8 @@ const TrendingNews = () => {
           Follow Us
         </span>
         <div className=" bg-gray-200 h-[2px] mt-3" />
-        <Fallowus/>
-        <WeatherApplication/>
+        <Fallowus />
+        <WeatherApplication />
       </div>
     </div>
   );

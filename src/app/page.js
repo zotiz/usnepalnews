@@ -1,3 +1,4 @@
+import Bichar from '@/components/subcomponents/Bichar'
 import Hero from '@/components/subcomponents/Hero'
 import TrendingNews from '@/components/subcomponents/TrendingNews'
 import WeatherApp from '@/components/subcomponents/WeatherApp'
@@ -10,6 +11,8 @@ const page = () => {
       <br />
       
       <TrendingNews/>
+      <br />
+      <Bichar/>
     </div>
   )
 }
