@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-2 gap-1 ">
+    <div className="grid md:grid-cols-4 grid-rows-2 gap-1 ">
       <div className="row-span-2 col-span-2 relative h-[454px]">
         <div className="absolute top-0 bottom-0 left-0 right-0 h-full ">
           <Image

@@ -14,3 +14,11 @@
 
 background: linear-gradient(180deg,#ffffff00, #00000000, #00000076, #000000f1 );
 }
+
+.custom-radial-gradient {
+ 
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+  background: linear-gradient(135deg, #5424fb, #9836e6 );
+  /* Add other styling properties as needed */
+ /* Adjust the height as needed */
+}

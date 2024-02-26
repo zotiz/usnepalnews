@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import TimeOclock from "./TimeOclock";
+import Fallowus from "./Fallowus";
+import WeatherApplication from "./WeatherApplication";
 
 const TrendingNews = () => {
   const trendingNews = [
@@ -32,15 +34,15 @@ const TrendingNews = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-4 mt-3">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3">
       <div className="col-span-2 text-xl font-semibold text-red-600">
         <span className="border-b-2 pb-[9px] border-red-500 pr-2">
           ट्रेन्डिङ समाचार
         </span>
 
         <div className=" bg-gray-200 h-[2px] mt-2" />
-        <div className="mt-4 flex gap-8">
-          <div className="flex-1 h-[450px] relative">
+        <div className="mt-4 flex flex-col md:flex-row gap-8">
+          <div className="md:flex-1 h-[450px] relative">
             <Image
               src="https://i0.wp.com/himalayakhabar.com/wp-content/uploads/2023/12/399898178_360144253195175_5812233660479531845_n-scaled.jpg?fit=2560%2C1920&ssl=1"
               alt="asdf"
@@ -68,7 +70,7 @@ const TrendingNews = () => {
                   <Image src={item.imgUrl} alt="daf" width={150} height={150} />
                   <div className="text-black">
                     <TimeOclock textcolor={"text-gray-400"} />
-                    <p className="text-black text-[15px]">{item.title}</p>
+                    <p className="text-black text-[14px] font-normal">{item.title}</p>
                   </div>
                 </div>
               );
@@ -82,6 +84,8 @@ const TrendingNews = () => {
           Follow Us
         </span>
         <div className=" bg-gray-200 h-[2px] mt-3" />
+        <Fallowus/>
+        <WeatherApplication/>
       </div>
     </div>
   );
