@@ -5,7 +5,6 @@ import WeatherApp from "./subcomponents/WeatherApp";
 import DarkAndLight from "./subcomponents/DarkAndLight";
 Image;
 const Navbar = () => {
-
   const navlink = [
     {
       title: "गृहपृष्‍ठ",
@@ -13,31 +12,31 @@ const Navbar = () => {
     },
     {
       title: "समाचार",
-      url: "/",
+      url: "/allnews/samachar",
     },
     {
       title: "विचार",
-      url: "/",
+      url: "/allnews/bichar",
     },
     {
       title: "देश",
-      url: "/",
+      url: "/allnews/desh",
     },
     {
       title: "बिजनेस",
-      url: "/",
+      url: "/allnews/bussiness",
     },
     {
       title: "अमेरिका",
-      url: "/",
+      url: "/allnews/america",
     },
     {
       title: "अन्तरवार्ता",
-      url: "/",
+      url: "/allnews/interview",
     },
     {
       title: "साहित्य",
-      url: "/",
+      url: "/allnews/literature",
     },
   ];
   return (
@@ -66,12 +65,11 @@ const Navbar = () => {
           })}
         </div>
         <div className="pr-5 flex items-center gap-4">
-          <WeatherApp/>
+          <WeatherApp />
           |
-          <DarkAndLight/>
+          <DarkAndLight />
         </div>
       </div>
-    
     </div>
   );
 };
